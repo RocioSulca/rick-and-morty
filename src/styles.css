@@ -1,0 +1,167 @@
+body {
+    background-color: #292929;
+}
+
+.dot-alive {
+    color: #0FA958;
+}
+
+.dot-dead {
+    color: #bf0603;
+}
+
+.title {
+    font-weight: 600;
+    color: white;
+    font-size: 40px;
+}
+
+.input-wrapper {
+    position: relative;
+    /* width: 271px; */
+    display: flex;
+    justify-content: center;
+}
+ 
+.input-icon {
+    color: white;
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    left: 18%;
+    top: 23%;
+    transform: translateY(-50%);
+}
+
+input {
+    width: 60%;
+    background-color: #494949;
+    border-radius: 5px;
+    padding: 10px 15px 10px 55px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.enlace-character {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+.characters-img {
+    border-radius: 5px;
+    width: 270px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    color: white;
+    font-size: 22px;
+}
+
+.back-container {
+    font-size: 30px;
+    color: white;
+}
+
+.enlace-back {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 20px 0px 20px;
+    color: white;
+}
+
+.character-title {
+    color: white;
+    font-size: xx-large;
+}
+
+.unique-character {
+    border-radius: 50%;
+    padding: 20px 0px 20px 0px;
+}
+
+.status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.container-status {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+.species {
+    color: white;
+    padding-bottom: 26px;
+    font-size: 20px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container-allcharacters {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .back-container {
+        font-size: 35px;
+    }
+    .enlace-back {
+        padding: 35px 20px 0px 35px;
+    }
+    .character-title {
+        font-size: xxx-large;
+        margin-top: -5px;
+    }
+    .species {
+        font-size: 25px;
+    }
+    .container-status {
+        font-size: 25px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container-allcharacters {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .back-container {
+        font-size: 50px;
+    }
+    .enlace-back {
+        padding: 50px 20px 0px 50px;
+    }
+    .container-status{
+        font-size: 30px;
+    }
+    .species {
+        font-size: 30px;
+    }
+    .character-title {
+        margin-top: -8px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container-allcharacters {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .character-title {
+        margin-top: -10px;
+    }
+}
