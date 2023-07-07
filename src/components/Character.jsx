@@ -3,6 +3,7 @@ import { uniqueCharacter } from "../functions/function";
 import { useState, useEffect } from "react";
 import { GoDotFill, GoArrowLeft } from "react-icons/go";
 import "../styles.css";
+import { Link } from "react-router-dom";
 
 function Character() {
     const params = useParams()
@@ -16,9 +17,11 @@ function Character() {
 
     return (
         <>
-            <div className="back-container">
-                <a href="/" className="enlace-back"><GoArrowLeft></GoArrowLeft></a>
-            </div>
+            <Link to="/">
+                <div className="back-container">
+                    <span className="enlace-back"><GoArrowLeft></GoArrowLeft></span>
+                </div>
+            </Link>
             {selectUniqueCharacter != null ?
                 <>
                     <h1 className="character-title">{selectUniqueCharacter.name}</h1>
