@@ -37,7 +37,7 @@ function Character() {
                     <div className="species">Ultima vez visto: {selectUniqueCharacter.location.name}</div>
 
                 </>
-                : ('No existe el personaje')}
+                : <div className='no-character'><p>NO EXISTE EL PERSONAJE</p></div>}
 
         </>
     )

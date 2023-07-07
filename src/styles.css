@@ -1,5 +1,6 @@
 body {
     background-color: #292929;
+    
 }
 
 .dot-alive {
@@ -39,6 +40,7 @@ input {
     padding: 10px 15px 10px 55px;
     margin-bottom: 50px;
     font-size: 20px;
+    color: white;
 }
 
 .enlace-character {
@@ -148,6 +150,11 @@ h2 {
     justify-content: center;
 }
 
+.no-character > p {
+    font-size: 23px;
+    color: white;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .container-allcharacters {
@@ -172,6 +179,9 @@ h2 {
     }
     .img-notfound {
         width: 70%;
+    }
+    .no-character {
+        margin-left: 50%;
     }
 }
 
@@ -203,6 +213,9 @@ h2 {
         align-items: center;
         margin: 15% 0% 10% 0%;
     }
+    .no-character {
+        margin: 0% -50% 0% 50%;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -220,5 +233,8 @@ h2 {
     }
     .container-notfound {
         margin: 8% 0% 10% 0%;
+    }
+    .no-character {
+        margin: 0% -60% 0% 90%;
     }
 }
