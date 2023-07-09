@@ -16,8 +16,8 @@ const Home = () => {
 
     return (
         <>
-                <Search allCharacters={allCharacters} setAllCharacters={setAllCharacters} ></Search>
-                <Footer/>
+            <Search allCharacters={allCharacters} setAllCharacters={setAllCharacters} ></Search>
+            <Footer />
         </>
     )
 }

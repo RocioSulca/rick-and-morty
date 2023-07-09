@@ -15,10 +15,10 @@ function Search({ allCharacters, setAllCharacters }) {
     const presionar = e => {
 
         setSearch(e.target.value)
-        resBusque(e.target.value)
+        resBusqueda(e.target.value)
     }
 
-    function resBusque(elementoBuscado) {
+    function resBusqueda(elementoBuscado) {
 
         let resultado = personajes.filter((elemento) => elemento.name.toString().toLowerCase().includes(elementoBuscado.toLowerCase()))
         return setAllCharacters(resultado)
@@ -32,14 +32,14 @@ function Search({ allCharacters, setAllCharacters }) {
                 <GoSearch className='input-icon'></GoSearch>
             </div>
             <div className='container-allcharacters'>
-                
-                {allCharacters && allCharacters.length !==0 ? allCharacters.map(character =>
+
+                {allCharacters && allCharacters.length !== 0 ? allCharacters.map(character =>
                     <a key={character.id} href={`/character/${character.id}`} className='enlace-character'>
                         <img src={character.image} alt='Imagen de los personjes' className='characters-img'></img>
                         <h2>{character.name}</h2>
-                    </a> 
+                    </a>
                 ) : <div className='no-character'><p>NO HAY EL PERSONAJE</p></div>}
-                
+
             </div>
         </>
     )
